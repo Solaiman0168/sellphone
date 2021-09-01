@@ -8,11 +8,9 @@
   --primary-color: #00A464;
   --secondary-color: #1a1a1a;
 }
-/* @media(max-width: 767px){
-  body{
-    margin-left: 15px;
-  }
-} */
+
+/* ---Header section---
+------------------------ */
 .header-top-sec{
   background: #f3f1f1;
 }
@@ -35,6 +33,9 @@
   width: inherit;
   display: inline-block;
 }
+
+/*----- Menu section-----
+------------------------- */
 .menu-sec{
   background-color: var(--primary-color);
 }
@@ -247,6 +248,11 @@
   }
 }
 
+
+
+
+/*------ Promo section----
+---------------------------- */
 @media (max-width: 768px) {
   .promo {
     display: none;
@@ -308,6 +314,8 @@
 }
 
 
+/* ----Gallary section---
+--------------------- ---*/
 @media(max-width: 767px){
   .row-rev{
     display: flex;
@@ -347,7 +355,6 @@
 .category-content ul li{
     list-style: none;
     border-bottom: 1px solid #dbdee1;
-    /* border-left: 2px solid var(--primary-color); */
     width: 100%;
     padding-left: 0;
 
@@ -397,23 +404,14 @@
     padding-right: 0;
   }
 }
-/* li.mbl-menu:first-child{
-  margin-top: 2px;
-} */
+
 
 
 
 /**---Categories left content area---
 ------------------------------------- **/
 
-/* .navigation {
-  width: 240px;
-} */
-@media(max-width: 600px){
-  .navigation {
-    width: 0;
-  }
-}
+
 .mainmenu, .submenu {
   list-style: none;
   padding: 0;
@@ -466,7 +464,7 @@
 }
 @media(max-width: 600px){
   .category-content ul li{
-    width: 413px !important;
+    width: 100% !important;
   }
   .one-mb{
     margin-top: 1px;
@@ -498,6 +496,11 @@
   width: 95%;
   margin: 2em auto auto;
 }
+@media(max-width: 767px){
+  .image-gallery {
+
+  }
+}
 .slider {
   width: 100%;
   max-width: 100%;
@@ -508,6 +511,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media(max-width: 767px){
+  .slider {
+    padding-top: 430px;
+    margin-top: -25px;
+  }
 }
 .slider input[name='slide_switch'] {
   display: none;
@@ -552,7 +561,11 @@
   height: 100%;
   transition: .3s;
 }
-
+@media(max-width: 767px){
+  .slider div img {
+    height: auto;
+  }
+}
 .image-gallery img {
   margin: 0 auto;
 }
@@ -898,6 +911,15 @@ img {
 /*-----End Tab area------
 ------------------------ */
 
+
+/* --Feature product---
+---------------------- */
+.feature-product-content{
+  border: 1px solid #e2e2e2;
+  margin-bottom: 15px;
+  margin-top: -9px;
+  padding: 25px 20px;
+}
 .feature-products h2 {
   color: #fff;
   border-bottom: 0;
@@ -913,23 +935,9 @@ img {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
-.feature-products-content {
-  width: 100%;
-  margin: 0;
-  padding: 25px 20px 35px;
-  border: 1px solid #e2e2e2;
-  border-top: 1px solid #00A464;
-  margin-top: -8px;
-}
-.product-container {
-  display: inline-block;
-  width: 23%;
-  text-align: center;
-  margin-left: 10px;
-}
-img.prouduct-img-f {
-  /* height: 400px; */
-  width: auto;
+.product-container a{
+  display: block;
+  text-decoration: none;
 }
 .featured-product-name {
   /* height: 36px; */
@@ -940,10 +948,16 @@ img.prouduct-img-f {
   -moz-line-clamp: 2;
   display: inline;
   margin-top: 5px;
-  line-height: 18px;
+  line-height: 24px;
   color: #111820;
   font-size: 18px;
   font-weight: normal;
+  text-align: center;
+}
+@media(max-width: 767px){
+  .featured-product-name {
+    padding: 0 10px;
+  }
 }
 .featured-product-price {
   font-weight: bold !important;
@@ -951,33 +965,23 @@ img.prouduct-img-f {
   font-size: 24px;
   line-height: 21px;
   padding: 8px 0 0 0;
+  text-align: center;
 }
-.product-container a{
-  text-decoration: none;
-}
-@media screen and (max-width: 500px){
-  .feature-products-content {
-    padding: 15px 0px 25px!important;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px){
-  .product-container:nth-child(odd) {
-    margin-right: 5px;
+@media(max-width: 767px){
+  .feature-product-content{
+    padding: 0 15px;
   }
 }
 @media screen and (max-width: 500px){
   .product-container {
-    margin: 10px 0 0 0;
-    padding: 10px 10px;
-    width: 45%;
-  } 
+    padding: 15px 0px 25px!important;
+    text-align: center;
+  }
 }
 
 
-
-
-
+/* ---Footer---------------
+-------------------- */
 .footer-sec{
   background: var(--secondary-color);
 }
@@ -1020,6 +1024,9 @@ img.prouduct-img-f {
   color: var(--primary-color);
   text-decoration: none;
 }
+
+
+
 .row{
     margin-right: 0;
     margin-left: 0;
